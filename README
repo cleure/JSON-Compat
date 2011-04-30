@@ -1,0 +1,7 @@
+
+I got tired of dealing with browsers that don't support native JSON.parse() and JSON.stringify() methods, so I created this project. It detects if JSON is currently present, and if not, creates a new object called JSON, with stringify and parse methods.
+
+Using it is super easy. Just add it to any project, and add:
+
+<script type="text/javascript" src="/js/json-compat.js"></script>
+
