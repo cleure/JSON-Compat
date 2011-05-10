@@ -93,7 +93,7 @@ if (typeof(JSON) !== 'object') {
                     continue;
                 }
 
-                if (typeof o[k] === 'function') {
+                if (typeof(o[k]) === 'function') {
                     // skip pairs where the value is a function.
                     continue;
                 }
