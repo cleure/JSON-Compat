@@ -80,8 +80,7 @@ if (typeof(JSON) !== 'object') {
             
             var pairs = [];
             var k;
-            for (k in o) {
-            if (o.hasOwnProperty(k)) {
+            for (k in o) { if (o.hasOwnProperty(k)) {
                 var name;
                 var type = typeof(k);
 
@@ -101,7 +100,7 @@ if (typeof(JSON) !== 'object') {
 
                 var val = this.stringify(o[k]);
                 pairs.push(name + ':' + val);
-			}}
+            }}
 
 			return '{' + pairs.join(', ') + '}';
         }
